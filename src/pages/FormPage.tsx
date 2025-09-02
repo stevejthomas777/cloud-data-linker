@@ -84,7 +84,7 @@ const FormPage = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (submissionCount >= 5) {
+    if (submissionCount >= 500000) {
       toast({
         title: "Limit Reached",
         description: "Maximum submissions reached. Redirecting to homepage.",
